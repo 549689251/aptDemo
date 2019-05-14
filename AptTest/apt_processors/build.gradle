@@ -1,0 +1,11 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(path: ':apt_annotation') //javapoet代码生成框架
+
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
